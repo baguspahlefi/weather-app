@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen font-mono border-white box-border bg-slate-900">
+  <div class="search lg:w-2/5 w-full max-w-max py-10 px-4 rounded-2xl bg-gradient-to-br from-cyan-500 to-emerald-500 text-white text-center">
+    <div class="flex w-full items-center justify-between">
+      <input class="border-0 outline-none bg-gray-100 text-white py-2 px-2 h-8 rounded-md flex-1 me-4 fs-15 text-gray-800" value="" type="text" placeholder="Enter City Name">
+      <button class="bg-gray-100 rounded-full w-10 h-10"><img class="w-4 ms-3" src="../images/search.png" alt=""></button>
+    </div>
+    <div class="weather">
+      <img src="../images/rain.png" class="mx-auto weather-icon" alt="">
+      <h1 class="temp text-4xl">22°C</h1>
+      <h1 class="city text-4xl">Geneng</h1>
+    </div>
+    <div class="grid-rows-1 mt-8">
+      <div class="columns-2">
+        <div class="grid-rows-3">
+          <img src="../images/humidity.png" class="mx-auto" width="80px" alt="">
+          <p class="humidity mt-3 text-center">50%</p>
+          <p>Humidity</p>
+        </div>
+        <div class="grid-rows-3">
+          <img src="../images/wind.png" width="68px" class="mx-auto" alt="">
+          <p class="wind mt-3">15 km/h</p>
+          <p>Wind</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<script src="script.js"></script>
+ 
+</html>
